@@ -14,17 +14,19 @@
        var names = new List();
        names.append('Vesko');
        names.append('Vujovic');
-       var name = names.toString();
-
-
+       var name              = names.toString();
+       var remove            = names.remove('vesko');
+       var afterRemovig      = names.toString();
        $(document).ready(function(){
            $("#list").append(name);
+           $("#removed").append(afterRemovig);
        })
 
 
 
     </script>
     <h4> Items of a list: <span id="list"></span></h4>
+    <h4> Items of a list: <span id="removed"></span></h4>
 
 </body>
 </html>
