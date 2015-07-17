@@ -15,12 +15,20 @@
        names.append("Cynthia");
        names.append("Barbara");
        names.append("Raymond");
-       names.remove("Raymond")
+       names.append("Vesko");
+       names.remove("Raymond");
        var name              = names.toString();
        var afterRemovig      = names.toString();
+
+
        $(document).ready(function(){
            $("#list").append(name);
            $("#removed").append(afterRemovig);
+           $("#get").append(element);
+
+
+
+
        })
 
 
@@ -28,6 +36,10 @@
     </script>
     <h4> Items of a list: <span id="list"></span></h4>
     <h4> Items of a list: <span id="removed"></span></h4>
+    <h4> Front() then call to GetElement:  <span id="get"></span></h4>
+    <h4> Call to next() then GetElement(): <span id="next"></span></h4>
+
+
 
 </body>
 </html>
