@@ -120,6 +120,7 @@ function moveTo(position){
 function getElement(){
     return this.dataStore[this.pos];
 }
+
 /**
  * Iteration over this list can be done like this
 
